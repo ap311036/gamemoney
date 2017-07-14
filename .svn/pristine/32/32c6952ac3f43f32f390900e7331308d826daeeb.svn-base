@@ -1,0 +1,305 @@
+#md_member_tab1,
+#md_member_tab2,
+#md_member_tab3,
+#md_member_tab4,
+#md_member_tab5{
+    padding: 20px;
+}
+
+.yellow_btn {
+    -moz-box-shadow: inset 0px 1px 0px 0px #fff6af;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #fff6af;
+    box-shadow: inset 0px 1px 0px 0px #fff6af;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
+    background-color: #ffec64;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 2px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+
+.yellow_btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+    background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64', GradientType=0);
+    background-color: #ffab23;
+}
+
+.yellow_btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.save_btn {
+    -moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));
+    background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0', GradientType=0);
+    background-color: #3d94f6;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #337fed;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #1570cd;
+    margin: 0px 10px;
+}
+
+.save_btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6));
+    background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+    background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+    background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+    background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+    background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6', GradientType=0);
+    background-color: #1e62d0;
+}
+
+.save_btn:active {
+    position: relative;
+    top: 1px;
+}
+
+#md_member_tab1 .save_btn {
+    margin-left: 77px;
+}
+
+#md_member_tab2 #md_mb_profile1 .save_btn {
+    margin: 0px 0px 20px 120px;
+}
+
+#md_member_tab1 form input[type="text"],
+#md_member_tab1 form input[type="password"] {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#md_member_tab1 form span {
+    display: inline-block;
+    height: 21px;
+    margin: 0px 0px 10px 10px;
+}
+
+#md_member_tab2 .tab_level_2 {
+    border: 1px solid #fff;
+    padding-top: 20px;
+    min-height: 458px;
+}
+
+#md_member_tab2 #md_mb_profile1 form input,
+#md_member_tab2 #md_mb_profile1 form select {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#md_member_tab2 #md_mb_profile1 label {
+    display: inline-block;
+    width: 78px;
+    text-align: right;
+    margin-left: 30px;
+}
+
+#md table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+#md table th {
+    border-bottom: 1px solid #fff;
+}
+
+#md table th,
+#md table td {
+    padding: 5px 0px;
+}
+
+#md_member {
+    margin-top: 20px;
+}
+
+
+/* #md_member_tab2 START */
+
+#md #mbAdd,
+#md #mbReceiptAdd {
+    display: inline-block;
+}
+
+
+/* #md_member_tab2 END */
+
+
+/* #md_member_tab3 START */
+
+#md_member_tab3 h4 a,
+#md_member_tab3 h4 span {
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+#md #md_card {
+    width: 350px;
+    height: 220px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #fff;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(135, 206, 250, 0.1);
+}
+
+#md #md_card:hover {
+    box-shadow: 0px 0px 20px #fff;
+}
+
+#md #md_card p:first-child {
+    margin-bottom: 50px;
+}
+
+#md #md_card p {
+    margin-bottom: 20px;
+}
+
+#md #md_card #md_card_type span:first-child {
+    float: left;
+    margin-left: 40px;
+}
+
+#md #md_card #md_card_type span:last-child {
+    float: right;
+    margin-right: 40px;
+}
+
+#md #md_card #md_card_type_now {
+    color: rgb(255, 153, 51);
+}
+
+#md #md_card #md_card_credit,
+#md #md_card #md_slider {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#md #md_card #md_card_credit {
+    float: left;
+    margin-left: 0px;
+}
+
+#md #md_card #md_slider {
+    width: 215px;
+    float: right;
+    margin: 2px 40px 0px 0px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));
+    background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0', GradientType=0);
+    background-color: #3d94f6;
+}
+
+#md #md_card #md_slider .ui-slider-handle {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
+    background-color: #ffec64;
+    height: 17px;
+}
+
+#md #md_card #md_card_credit_max {
+    clear: both;
+    margin: 50px 0px 0px 200px;
+}
+
+
+/* #md_member_tab3 END */
+
+
+/* #md_member_tab4 START */
+
+#md_member_tab4 th.md_mb_card_select {
+    border: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab4 td.md_mb_card_select {
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
+}
+
+#md_member_tab4 td.md_mb_card_select_last {
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab4 th.md_mb_card_hover {
+    border: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab4 td.md_mb_card_hover {
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
+}
+
+#md_member_tab4 td.md_mb_card_hover_last {
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab4 .md_mb_card_pointer {
+    cursor: pointer;
+}
+
+#md_member_tab4 #md_mb_card_content {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid orange;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* #md_member_tab4 END */

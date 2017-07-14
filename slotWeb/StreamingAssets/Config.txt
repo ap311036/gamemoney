@@ -1,0 +1,5 @@
+DevHost	60.250.122.219
+TcpPort	9935
+WSPort	8885
+Zone	SlotMainExtension
+Extension	TigerSlotExtension

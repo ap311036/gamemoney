@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="07221421-13c0-48a3-ac46-2c8f7b757249" name="gamemoney" url="http://60.248.141.143">
+        <fileTransfer host="60.248.141.143" port="22" rootFolder="/home/web/svnclient/gamemoney" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

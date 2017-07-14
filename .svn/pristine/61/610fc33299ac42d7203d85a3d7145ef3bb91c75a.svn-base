@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity WebGL Player | Slot</title>
+  <link rel="stylesheet" href="TemplateData/style.css?02121">
+  <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    function iframeCanvas(){
+      $("#canvas").attr({width:"533",height:"400"});
+//      alert('canvas變形');
+    }
+  </script>
+</head>
+<body class="template">
+  <p class="header"><span>Unity WebGL Player | </span>Slot</p>
+  <div class="template-wrap2 clear">
+   <!-- width="496" height="375" -->
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+  <br>
+    <div class="logo"></div>
+    <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+    <div class="title">Slot</div>
+</div>
+
+<!--
+<div style="width:100%;height:40px;background-color:#000;">
+
+</div>
+-->
+<!--
+<p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+-->
+
+<script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 536870912,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release/Slot_WebGL.data",
+    codeUrl: "Release/Slot_WebGL.js",
+    memUrl: "Release/Slot_WebGL.mem",
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
+
+<script type='text/javascript'>
+  var getStr = location.search.substr(1);
+  var getStrs = getStr.split("&");
+  var lifeMin = 60;
+  var expires = new Date();
+  expires.setTime(expires.getTime() + lifeMin * 60 * 1000);
+
+  for (var i = 0; i < getStrs.length; i++) {
+    document.cookie = getStrs[i] + "; expires=" + expires.toGMTString();
+  }
+  $(function(){
+    setCanvasSize();
+    function setCanvasSize() {
+      var widthint = window.innerWidth;
+      var heightint = window.innerHeight;
+      if((window.innerWidth / window.innerHeight) >= 1.33333){
+        // console.log("超過比例 停止放大")
+        var width = heightint * 1.3333 - 25 ;
+        var height = heightint + "px";
+        // var marginPx = (widthint - width) / 2 + "px";
+        // console.log(marginPx);
+        $("#canvas").css({ "height" : height,"width": width + "px"});
+      }else{
+        var width = widthint + "px";
+        var height = heightint + "px";
+        $("#canvas").css({ "height" : height,"width": width});
+        console.log("height: "+height+", width: "+width);
+      }
+    }
+    window.addEventListener("resize", setCanvasSize);
+  })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+#md {
+    width: 809px;
+    min-height: 1300px;
+    background-color: #fff;
+}
+
+#md h3 {
+    font-size: 17px;
+    color: rgb(128, 64, 0);
+    letter-spacing: 4px;
+    margin: 10px 0px 10px 10px;
+}
+
+#md h4 {
+    font-size: 17px;
+    color: rgb(204, 0, 0);
+    letter-spacing: 2px;
+    margin: 20px 0px 20px 0px;
+}
+
+#md table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+#md table th {
+    border-bottom: 1px solid black;
+}
+
+#md table th,
+#md table td {
+    padding: 5px 0px;
+}
+
+#md_member {
+    opacity: 0;
+    /*transition: opacity 1s;*/
+}
+
+
+/* #md_member_tab2 START */
+
+#md #mbAdd,
+#md #mbReceiptAdd {
+    display: inline-block;
+}
+
+
+/* #md_member_tab2 END */
+
+
+/* #md_member_tab3 START */
+
+#md_member_tab3 h4 a,
+#md_member_tab3 h4 span {
+    font-size: 17px;
+    color: rgb(26, 26, 255);
+    letter-spacing: 2px;
+}
+
+#md #md_card {
+    width: 350px;
+    height: 220px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#md #md_card p:first-child {
+    margin-bottom: 50px;
+}
+
+#md #md_card p {
+    margin-bottom: 20px;
+}
+
+#md #md_card #md_card_type span:first-child {
+    float: left;
+    margin-left: 40px;
+}
+
+#md #md_card #md_card_type span:last-child {
+    float: right;
+    margin-right: 40px;
+}
+
+#md #md_card #md_card_type_now {
+    color: rgb(255, 153, 51);
+}
+
+#md #md_card #md_card_credit,
+#md #md_card #md_slider {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#md #md_card #md_card_credit {
+    float: left;
+    margin-left: 0px;
+}
+
+#md #md_card #md_slider {
+    width: 215px;
+    float: right;
+    margin: 2px 40px 0px 0px;
+}
+
+#md #md_card #md_card_credit_max {
+    clear: both;
+    margin: 50px 0px 0px 200px;
+}
+
+
+/* #md_member_tab3 END */
+
+
+/* #md_member_tab4 START */
+
+#md_member_tab4 th.md_mb_card_select {
+    border: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab4 td.md_mb_card_select {
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
+}
+
+#md_member_tab4 td.md_mb_card_select_last {
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab4 th.md_mb_card_hover {
+    border: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab4 td.md_mb_card_hover {
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
+}
+
+#md_member_tab4 td.md_mb_card_hover_last {
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab4 .md_mb_card_pointer {
+    cursor: pointer;
+}
+
+#md_member_tab4 #md_mb_card_content {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid orange;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+/* #md_member_tab4 END */
+
+
+#md_member_tab5 th.md_mb_card_select {
+    border: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab5 td.md_mb_card_select {
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
+}
+
+#md_member_tab5 td.md_mb_card_select_last {
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab5 th.md_mb_card_hover {
+    border: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab5 td.md_mb_card_hover {
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
+}
+
+#md_member_tab5 td.md_mb_card_hover_last {
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab5 .md_mb_card_pointer {
+    cursor: pointer;
+}
+
+#md_member_tab5 #md_mb_card_content {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid orange;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*#md_member_tab5 th.md_mb_card_select {
+    border: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab5 td.md_mb_card_select {
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
+}
+
+#md_member_tab5 td.md_mb_card_select_last {
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab5 th.md_mb_card_hover {
+    border: 1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab5 td.md_mb_card_hover {
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
+}
+
+#md_member_tab5 td.md_mb_card_hover_last {
+    border-bottom: 1px solid orange;
+}
+
+#md_member_tab5 .md_mb_card_pointer {
+    cursor: pointer;
+}
+
+#md_member_tab5 #md_mb_card_content {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid orange;
+    text-align: center;
+    padding-top: 20px;
+}*/
+
+
+
+
+
+/* #md_member_tab4 END */
+
+

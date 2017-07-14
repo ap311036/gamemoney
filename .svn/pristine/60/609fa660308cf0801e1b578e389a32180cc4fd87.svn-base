@@ -1,0 +1,90 @@
+<?php
+//var_dump($_SESSION['member_point']);
+//var_dump($_COOKIE['member_point']);
+//var_dump($_COOKIE['member_account']);
+$frame_value = $_GET['key'];
+include_once '../lib/config.php';
+?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+//$(function(){
+//    $('#iframe1').ready(function(){
+//        var $iframe = $(this),
+//            $contents = $iframe.contents();
+//
+//            console.log($contents.find("#btn3").val());
+//        });
+//
+//
+//});
+  // $(function(){
+  //   setIframeSize();
+  //   function setIframeSize() {
+  //     var height = window.innerHeight - 130 + "px";
+  //     $("#iframe1").css({ "height" : height});
+  //   }
+  //   window.addEventListener("resize", setIframeSize);
+  // })
+  function isVideoInFullscreen() {
+    if (document.webkitFullscreenElement && document.webkitFullscreenElement.nodeName == 'DIV') {
+        console.log('Your game is playing in fullscreen');
+        $("#jpot").load("JpotDataiframe.php");
+    }else{
+        console.log('Your game isn\'t playing in fullscreen');
+        $("#jpot").empty();
+    }
+  }
+    // 進入全螢幕(需要被全螢幕的DOM元素)  
+    function launchFullScreen(element) {  
+      // 檢測瀏覽器基本  
+      if(element.requestFullScreen) {  
+        element.requestFullScreen();  
+      } else if(element.mozRequestFullScreen) {  
+        // 其次，檢測Mozilla的方法  
+        element.mozRequestFullScreen();  
+      } else if(element.webkitRequestFullScreen) {  
+        // if 檢測 webkit的API  
+        element.webkitRequestFullScreen();  
+      }  
+      isVideoInFullscreen();
+
+    };  
+    // 退出全螢幕,不用管是哪個元素，因爲螢幕是唯一的。
+    function cancelFullscreen() {  
+      if(document.cancelFullScreen) {  
+        document.cancelFullScreen();  
+      } else if(document.mozCancelFullScreen) {  
+        document.mozCancelFullScreen();  
+      } else if(document.webkitCancelFullScreen) {  
+        document.webkitCancelFullScreen();  
+      }    
+      isVideoInFullscreen();
+    };  
+    // 設定事件監聽，DOM内容Load完成，和jQuery的$.ready() 效果差不多
+    $(document).on("click", ".enterFullScreen", function () {
+        var elm = $(this).closest("#warp");
+        console.log(elm);
+        launchFullScreen(elm);
+    })
+    // 進入全螢幕的Event  
+    document.addEventListener("fullscreenchange", function(e) {  
+      console.log(e);  
+    });  
+    document.addEventListener("mozfullscreenchange", function(e) {
+      console.log(e);
+    });
+    document.addEventListener("webkitfullscreenchange", function(e) {
+      console.log(e);  
+    });  
+
+
+  
+</script>
+<div id="warp">
+	<div id="enterFullScreen" class="enterFullScreen">顯示全螢幕</div>
+	<div id="quitfull" class="quitfull">離開全螢幕</div>
+	<div class="closeGame">關閉遊戲</div>
+	<div id="jpot"></div>
+	<iframe id="iframe1" name="iframe1" style="width:100%;height:90%" src="<?php echo $webglroot; ?>index.html?user=<?php echo $_COOKIE['member_account']; ?>&key=<?php echo $frame_value ?>" scrolling="NO" allowfullscreen="true"></iframe>
+</div>
+

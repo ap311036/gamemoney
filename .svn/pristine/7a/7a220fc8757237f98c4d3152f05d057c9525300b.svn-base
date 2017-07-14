@@ -1,0 +1,11 @@
+#!/bin/sh
+sudo apt-get install mono-runtime
+
+printf 'unzip tgz:\n'
+sudo cp group.tgz /
+cd /
+sudo tar -zxvf group.tgz
+sudo rm /group.tgz
+sudo reboot
+
+

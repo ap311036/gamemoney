@@ -1,0 +1,110 @@
+/* aside #lt START */
+
+#lt {
+    width: 199px;
+    min-height: 1300px;
+    /*background-image: url("../img/main_left_bg.png");*/
+    background-color: #fff;
+}
+
+#lt div {
+    text-align: center;
+    margin: 0px 10px;
+    padding: 8px 0px;
+}
+
+#lt .lt_h3 {
+    font-size: 17px;
+    color: rgb(128, 64, 0);
+    letter-spacing: 4px;
+    margin: 10px 0px;
+}
+
+#lt .lt_white_bg {
+    background-color: #fff;
+}
+
+#lt #lt_myInfo a:link,
+#lt #lt_myInfo a:visited,
+#lt #lt_myInfo a:hover {
+    color: rgb(26, 26, 255);
+}
+
+#lt #lt_myInfo p {
+    margin-bottom: 8px;
+}
+
+#lt #lt_pc button {
+    margin-bottom: 8px;
+}
+
+#lt #lt_pc a:link,
+#lt #lt_pc a:visited,
+#lt #lt_pc a:hover {
+    color: rgb(26, 26, 255);
+}
+
+#lt #lt_app p {
+    margin: 8px 0px;
+}
+
+#lt #lt_app a:link,
+#lt #lt_app a:visited,
+#lt #lt_app a:hover {
+    color: rgb(26, 26, 255);
+}
+
+#lt #lt_card p {
+    margin-bottom: 8px;
+}
+
+#lt #lt_card #lt_card_type span:first-child {
+    float: left;
+    margin-left: 20px;
+}
+
+#lt #lt_card #lt_card_type span:last-child {
+    float: right;
+    margin-right: 20px;
+}
+
+#lt #lt_card #lt_card_type_now {
+    color: rgb(255, 153, 51);
+}
+
+#lt #lt_card #lt_card_credit,
+#lt #lt_card #lt_slider {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#lt #lt_card #lt_card_credit {
+    float: left;
+    margin-left: 5px;
+}
+
+#lt #lt_card #lt_slider {
+    width: 100px;
+    float: right;
+    margin: 2px 5px 0px 0px;
+}
+
+#lt #lt_card #lt_card_credit_max {
+    clear: both;
+    margin: 30px 0px 0px 120px;
+}
+
+#lt #lt_mtTime p {
+    height: 20px;
+}
+
+#lt #lt_mtTime .lt_week {
+    float: left;
+}
+
+#lt #lt_mtTime .lt_time {
+    float: right;
+}
+
+
+/* aside #lt END */

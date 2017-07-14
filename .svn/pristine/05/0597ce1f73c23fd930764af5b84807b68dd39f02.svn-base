@@ -1,0 +1,10 @@
+/* aside #rt START */
+
+#rt {
+    width: 169px;
+    height: 1300px;
+    /*background-image: url("../img/main_right_bg.png");*/
+    background-color: #fff;
+}
+
+/* aside #rt END */

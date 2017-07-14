@@ -1,0 +1,215 @@
+footer {
+    width: 1010px;
+    margin: auto;
+}
+
+#footer_info {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#footer_info p {
+    color: #fff;
+    margin: 5px 0px;
+    letter-spacing: 1px;
+}
+
+
+/* footer-1 START */
+
+.div_style_2 {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding-bottom: 10px;
+    height: 126px;
+}
+
+.div_style_2:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#lt {
+    background-image: url("../img/casino.png");
+    background-size: cover;
+    padding: 10px;
+}
+
+#lt .lt_h3 {
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 4px;
+    margin: 10px 0px;
+}
+
+#lt #lt_pc a:link,
+#lt #lt_pc a:visited,
+#lt #lt_pc a:hover {
+    color: rgb(255, 215, 0);
+}
+
+#lt #lt_app p {
+    margin: 8px 0px;
+}
+
+#lt #lt_app a:link,
+#lt #lt_app a:visited,
+#lt #lt_app a:hover {
+    color: rgb(255, 215, 0);
+}
+
+#lt #lt_card p {
+    margin-bottom: 8px;
+}
+
+#lt #lt_card #lt_card_type span:first-child {
+    float: left;
+    margin-left: 20px;
+}
+
+#lt #lt_card #lt_card_type span:last-child {
+    float: right;
+    margin-right: 20px;
+}
+
+#lt #lt_card #lt_card_type_now {
+    color: rgb(255, 153, 51);
+}
+
+#lt #lt_card #lt_card_credit,
+#lt #lt_card #lt_slider {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#lt #lt_card #lt_card_credit {
+    float: left;
+    margin-left: 5px;
+}
+
+#lt #lt_card #lt_slider {
+    width: 100px;
+    float: right;
+    margin: 2px 5px 0px 0px;
+}
+
+#lt #lt_card #lt_card_credit_max {
+    clear: both;
+    margin: 30px 0px 0px 120px;
+}
+
+#lt #lt_mtTime p {
+    height: 20px;
+}
+
+#lt #lt_mtTime .lt_week {
+    float: left;
+}
+
+#lt #lt_mtTime .lt_time {
+    float: right;
+}
+
+.chip_btn {
+    width: 76px;
+    height: 76px;
+    border-radius: 38px;
+    border: none;
+    background-color: transparent;
+    background-size: 100% 100%;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.chip_btn:hover {
+    box-shadow: 0px 0px 10px #fff;
+}
+
+#chip_btn_1 {
+    background-image: url("../img/chips_red.png");
+    color: #a11712;
+}
+
+#chip_btn_2 {
+    background-image: url("../img/chips_green.png");
+    color: #008c54;
+}
+
+#chip_btn_3 {
+    background-image: url("../img/chips_orange.png");
+    color: #cc5200;
+}
+
+#pc_download_btn {
+    margin-bottom: 8px;
+    -moz-box-shadow: inset 0px 1px 0px 0px #a4e271;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #a4e271;
+    box-shadow: inset 0px 1px 0px 0px #a4e271;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #89c403), color-stop(1, #77a809));
+    background: -moz-linear-gradient(top, #89c403 5%, #77a809 100%);
+    background: -webkit-linear-gradient(top, #89c403 5%, #77a809 100%);
+    background: -o-linear-gradient(top, #89c403 5%, #77a809 100%);
+    background: -ms-linear-gradient(top, #89c403 5%, #77a809 100%);
+    background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809', GradientType=0);
+    background-color: #89c403;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #74b807;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 34px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528009;
+}
+
+#pc_download_btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77a809), color-stop(1, #89c403));
+    background: -moz-linear-gradient(top, #77a809 5%, #89c403 100%);
+    background: -webkit-linear-gradient(top, #77a809 5%, #89c403 100%);
+    background: -o-linear-gradient(top, #77a809 5%, #89c403 100%);
+    background: -ms-linear-gradient(top, #77a809 5%, #89c403 100%);
+    background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#89c403', GradientType=0);
+    background-color: #77a809;
+}
+
+#pc_download_btn:active {
+    position: relative;
+    top: 1px;
+}
+
+#google_play_btn,
+#app_store_btn {
+    width: 130px;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    background-size: 100% 100%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #fff;
+    margin: 20px 10px 10px 10px;
+}
+
+#google_play_btn:hover,
+#app_store_btn:hover {
+    box-shadow: 0px 0px 20px #fff;
+}
+
+#google_play_btn {
+    background-image: url("../img/Google_Play.png");
+}
+
+#app_store_btn {
+    background-image: url("../img/App_Store.png");
+}
+
+
+/* footer-1 END */

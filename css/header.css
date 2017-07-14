@@ -1,0 +1,323 @@
+.userInfo_title {
+    color: rgb(173, 216, 230);
+    margin-right: 5px;
+}
+
+header {
+    width: 1010px;
+    height: 449px;
+    margin: auto;
+    background-image: url("../img/header_banner.png");
+    background-size: cover;
+    background-position: 80% 0%;
+}
+
+header #hd_logo {
+    width: 389px;
+    height: 97px;
+    position: absolute;
+    top: 149px;
+    left: 376px;
+    cursor: pointer;
+}
+
+header #hd_logo a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+header #hd_play {
+    width: 224px;
+    height: 209px;
+    position: relative;
+    top: 230px;
+    left: 0px;
+    cursor: pointer;
+    background-image: url("../img/Night_Play_1.png");
+}
+
+header #hd_play a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#fb_fan_page {
+    display: inline-block;
+    width: 157px;
+    height: 138px;
+    float: right;
+    background-image: url("../img/Night_FB_1.png");
+    display: none;
+}
+
+#userStatusDiv {
+    float: right;
+    margin-right: 50px;
+}
+
+#userInfoDiv {
+    width: 216.5px;
+    height: 218px;
+}
+
+#userInfoDiv p {
+    margin: 15px 0px 23px 0px;
+}
+
+#userSignInMid,
+#userInfoDiv {
+    margin: 0px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#userSignInMid:hover,
+#userInfoDiv:hover {
+    box-shadow: 0px 0px 20px #fff;
+}
+
+#userSignInMid form {
+    margin-top: 8px;
+}
+
+#userSignInMid label {
+    color: rgb(173, 216, 230);
+}
+
+#userSignInMid input#userId,
+#userSignInMid input#userPw {
+    width: 130px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: #111;
+}
+
+#userSignInMid input#userVerify {
+    width: 69px;
+    margin: 0px 5px 5px 5px;
+    color: #111;
+}
+
+#userSignInMid input#userRemember {
+    vertical-align: middle;
+}
+
+#user_forgot_pw {
+    color: #FFD700;
+    float: right;
+    margin: 1px 3px 0px 0px;
+}
+
+#userSignInBtn {
+    margin: 8px 5px 0px 5px;
+}
+
+#userFbSignInBtn {
+    margin-left: 5px;
+}
+
+#userSettingBtn,
+#userSignOutBtn {
+    margin: 0px 6px;
+}
+#fb_login_div,
+#userSignInBtn,
+#userFbSignInBtn,
+#userSettingBtn,
+#userSignOutBtn {
+    -moz-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));
+    background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0', GradientType=0);
+    background-color: #3d94f6;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #337fed;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #1570cd;
+}
+
+#userSignInBtn:hover,
+#userFbSignInBtn:hover,
+#userSettingBtn:hover,
+#userSignOutBtn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6));
+    background: -moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+    background: -webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+    background: -o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+    background: -ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+    background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6', GradientType=0);
+    background-color: #1e62d0;
+}
+
+#userSignInBtn:active,
+#userFbSignInBtn:active,
+#userSettingBtn:active,
+#userSignOutBtn:active {
+    position: relative;
+    top: 1px;
+}
+
+#userSignInMid #userVerifyImg {
+    width: 56px;
+    height: 25px;
+    vertical-align: top;
+}
+
+#userSignIn,
+#userInfoDiv h3 {
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#userSignUp,
+#playFreeBtn {
+    float: right;
+}
+
+#userSignUp button,
+#playFreeBtn button {
+    -moz-box-shadow: inset 0px 1px 0px 0px #f5978e;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #f5978e;
+    box-shadow: inset 0px 1px 0px 0px #f5978e;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f));
+    background: -moz-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background: -webkit-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background: -o-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background: -ms-linear-gradient(top, #f24537 5%, #c62d1f 100%);
+    background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f', GradientType=0);
+    background-color: #f24537;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 14px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+}
+
+#userSignUp button:hover,
+#playFreeBtn button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537));
+    background: -moz-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background: -webkit-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background: -o-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background: -ms-linear-gradient(top, #c62d1f 5%, #f24537 100%);
+    background: linear-gradient(to bottom, #c62d1f 5%, #f24537 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537', GradientType=0);
+    background-color: #c62d1f;
+}
+
+#userSignUp button:active,
+#playFreeBtn button:active {
+    position: relative;
+    top: 1px;
+}
+
+#hd_nav {
+    width: 1010px;
+    margin: auto;
+    text-align: center;
+}
+
+#hd_nav li.hd_nav_lv1 {
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    position: relative;
+    padding: 20px 0px;
+    cursor: pointer;
+}
+
+#hd_nav li.hd_nav_lv1:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 10px #fff;
+}
+
+#hd_nav li.hd_nav_lv1:hover ul.hd_nav_lv2 {
+    display: block;
+}
+
+#hd_nav li.hd_nav_lv1 a.hd_nav_lv1_a:link {
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 31px;
+}
+
+#hd_nav li.hd_nav_lv1 a.hd_nav_lv1_a:visited {
+    color: #fff;
+}
+
+#hd_nav ul.hd_nav_lv2 {
+    position: absolute;
+    z-index: 5;
+    background-color: black;
+    display: none;
+    box-shadow: 0px 0px 10px #fff;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#hd_nav ul.hd_nav_lv2 li {
+    display: block;
+    padding: 10px 0px;
+}
+
+#hd_nav ul.hd_nav_lv2 li:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));
+    background: -moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: -ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+    background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0', GradientType=0);
+    background-color: #3d94f6;
+}
+
+#hd_nav ul.hd_nav_lv2 a.hd_nav_lv2_a:link,
+#hd_nav ul.hd_nav_lv2 a.hd_nav_lv2_a:visited,
+#hd_nav ul.hd_nav_lv2 a.hd_nav_lv2_a:hover {
+    font-size: 13px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1.0);
+    display: block;
+}
+
+#hd_nav ul.hd_nav_lv2 li:hover a.hd_nav_lv2_a:link {
+    color: #fff;
+    font-size: 14px;
+}
+
+.unopen{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 13px;
+    color: rgba(255,255,255, 0.7);
+}

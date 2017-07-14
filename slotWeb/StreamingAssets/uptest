@@ -1,0 +1,12 @@
+#!/bin/sh
+cd ~/slot/
+rm -r Slot_Linux_Test
+sftp odls@192.168.50.150 << END_SFTP
+get share/slot/Slot_Linux_Test.zip .
+quit
+END_SFTP
+unzip Slot_Linux_Test.zip
+cd Slot_Linux_Test
+chmod 755 Slot.x86
+./Slot.x86
+

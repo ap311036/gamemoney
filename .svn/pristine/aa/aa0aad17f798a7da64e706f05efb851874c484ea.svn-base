@@ -1,0 +1,38 @@
+[
+  {
+    "act_id": "1",
+    "title": "亞瑟王全盤榜",
+    "prize_detail": [
+      {
+        "prize_id": "4",
+        "prize_item": "\u53d6\u6d88",
+        "player": [
+          "magussiro",
+          "Sammi"
+        ]
+      }
+    ]
+  },
+  {
+    "act_id": "2",
+    "title": "海神VS雷神連爆榜III",
+    "prize_detail": [
+      {
+        "prize_id": "1",
+        "prize_item": "\u5b89\u5b89",
+        "player": [
+          "Sammi"
+        ]
+      },
+      {
+        "prize_id": "3",
+        "prize_item": "\u78ba\u5b9a",
+        "player": [
+          "Sammi"
+        ]
+      }
+    ]
+  }
+]
+
+

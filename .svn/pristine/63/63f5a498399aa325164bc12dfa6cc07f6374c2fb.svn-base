@@ -1,0 +1,150 @@
+<?php
+//var_dump($_SESSION['member_point']);
+//var_dump($_COOKIE['member_point']);
+//var_dump($_COOKIE['member_account']);
+$frame_value = $_GET['key'];
+include_once '../lib/config.php';
+?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+//$(function(){
+//    $('#iframe1').ready(function(){
+//        var $iframe = $(this),
+//            $contents = $iframe.contents();
+//
+//            console.log($contents.find("#btn3").val());
+//        });
+//
+//
+//});
+  // $(function(){
+  //   setIframeSize();
+  //   function setIframeSize() {
+  //     var height = window.innerHeight - 130 + "px";
+  //     $("#iframe1").css({ "height" : height});
+  //   }
+  //   window.addEventListener("resize", setIframeSize);
+  // })
+  function isVideoInFullscreen() {
+    if (document.webkitFullscreenElement && document.webkitFullscreenElement.nodeName == 'DIV') {
+        console.log('Your game is playing in fullscreen');
+        // $("#jpot").load("JpotDataiframe.php");
+    }else{
+        console.log('Your game isn\'t playing in fullscreen');
+        console.log(document.webkitFullScreenElement);
+        console.log(document.webkitFullScreenElement.nodeName);
+        $("#jpot").empty();
+    }
+  }
+    // 進入全螢幕(需要被全螢幕的DOM元素)  
+    function launchFullScreen(element) {  
+      // 檢測瀏覽器基本  
+      if(element.requestFullScreen) {  
+        element.requestFullScreen();  
+      } else if(element.mozRequestFullScreen) {  
+        // 其次，檢測Mozilla的方法  
+        element.mozRequestFullScreen();  
+      } else if(element.webkitRequestFullScreen) {  
+        // if 檢測 webkit的API  
+        element.webkitRequestFullScreen();
+      }  
+      // isVideoInFullscreen();
+    };  
+    // 退出全螢幕,不用管是哪個元素，因爲螢幕是唯一的。
+    function cancelFullscreen() {  
+      if(document.cancelFullScreen) {  
+        document.cancelFullScreen();  
+      } else if(document.mozCancelFullScreen) {  
+        document.mozCancelFullScreen();  
+      } else if(document.webkitCancelFullScreen) {  
+        document.webkitCancelFullScreen();  
+      }  
+      isVideoInFullscreen();
+    };  
+  function enterFullScreen() {
+            // var elem = document.getElementById('warp');
+            var elem = $(this).closest("#warp");
+            elem.webkitRequestFullScreen();
+
+   }
+    // 顯示全螢幕訊息
+    // function dumpFullscreen() {
+    //     var d = document;  
+    //     var fullE = null;  
+    //     var fullEnable = "fullScreen is disable!";  
+    //     console.log(document.webkitFullscreenElement.nodeName);
+    //     if(d.fullScreenElement){  
+    //         fullE = d.fullScreenElement;  
+    //     } else if(d.mozFullScreenElement){  
+    //         // 如果有問題，把mozFullscreenElement 改成 mozFullScreenElement,S大寫
+    //         fullE = d.mozFullScreenElement;  
+    //     } else if(d.webkitFullscreenElement){  
+    //         // 本人使用chrome， Fullscreen 之中，s为小寫。 
+    //         fullE = d.webkitFullscreenElement;  
+    //     }  
+    //     // 如果有問題，请改變 fullScreen 中 s 的大小寫。   
+    //     if(d.fullScreenEnabled){  
+    //         fullEnable = d.fullScreenEnabled;  
+    //     } else if(d.mozFullScreenEnabled){  
+    //         fullEnable = d.mozFullScreenEnabled;  
+    //     } else if(d.webkitFullscreenEnabled){  
+    //         // 注意 Fullscreen 的中間s大小寫  
+    //         fullEnable = d.webkitFullscreenEnabled;
+    //     }  
+    //     //  
+    //     if(window.console){  
+    //         console.dir(fullE);  
+    //     } else if(fullE){  
+    //         alert(fullE.tagName);  
+    //     } else {  
+    //         alert("全屏元素是:"+fullE);  
+    //     }  
+    //     //  
+    //     if(window.console){  
+    //         console.info("允许全屏:"+fullEnable);  
+    //     } else if(fullEnable){  
+    //         alert("允许全屏:"+fullEnable);  
+    //     } else {  
+    //         alert("允许全屏:"+fullEnable);  
+    //     }  
+    // };  
+    // 設定事件監聽，DOM内容Load完成，和jQuery的$.ready() 效果差不多
+    window.addEventListener("DOMContentLoaded", function() {  
+        // 取得DOM元素  
+        var enterFullScreen = document.getElementById("enterFullScreen");  
+        var quitfull = document.getElementById("quitfull");  
+              
+        // 事件監聽  
+        enterFullScreen.addEventListener("click", function() {  
+            //   
+            // var elm = $(this).closest("#warp");
+            // launchFullScreen(document.documentElement); 
+            // aa(elm); 
+            // console.log(elm); 
+        });  
+        quitfull.addEventListener("click", function() {  
+            //   
+            cancelFullscreen();  
+        });  
+  
+    }, false);  
+    // 進入全螢幕的Event  
+    document.addEventListener("fullscreenchange", function(e) {  
+      console.log(e);  
+    });  
+    document.addEventListener("mozfullscreenchange", function(e) {
+      console.log(e);
+    });
+    document.addEventListener("webkitfullscreenchange", function(e) {
+      console.log(e);  
+    });  
+  
+</script>
+<div id="warp">
+	<div id="enterFullScreen" class="enterFullScreen" onclick="enterFullScreen()">顯示全螢幕</div>
+	<div id="quitfull" class="quitfull">離開全螢幕</div>
+	<div class="closeGame">關閉遊戲</div>
+	<div id="jpot"></div>
+	<iframe id="iframe1" name="iframe1" style="width:100%;height:90%" src="<?php echo $webglroot; ?>index.html?user=<?php echo $_COOKIE['member_account']; ?>&key=<?php echo $frame_value ?>" scrolling="NO" allowfullscreen="true"></iframe>
+</div>
+

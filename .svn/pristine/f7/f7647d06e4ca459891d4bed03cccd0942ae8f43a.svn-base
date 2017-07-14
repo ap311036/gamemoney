@@ -1,0 +1,16 @@
+{
+"sLengthMenu": "每頁 _MENU_ 筆",
+"sZeroRecords": "抱歉， 没有找到",
+"sInfo": "從 _START_ 到 _END_ /共 _TOTAL_ 筆",
+"sInfoEmpty": "没有資料",
+"sInfoFiltered": "(從 _MAX_ 條資料中搜尋)",
+"oPaginate": {  
+    "sFirst": "第一頁",  
+    "sPrevious": "",
+    "sNext": "",  
+    "sLast": "最後一頁"  
+}, 
+"sSearch": "搜尋",
+"sZeroRecords": "没有搜尋到資料",  
+"sProcessing": "<img src='/images/loading.gif' />"
+}

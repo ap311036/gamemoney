@@ -1,0 +1,199 @@
+.div_style_1 {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* main #md START */
+
+#md {
+    width: 100%;
+    min-height: 1300px;
+    font-size: 0px;
+}
+
+#md marquee {    
+    padding-left: 10px;
+}
+
+#md marquee p {
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#md marquee p:last-child {
+    margin-bottom: 0px;
+}
+
+#md .md_h3 {
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 4px;
+    margin: 10px 0px 10px 10px;
+    float: left;
+}
+
+#md .md_btn_more {
+    margin: 6px 10px 0px 0px;
+    float: right;
+}
+
+#md .md_clear {
+    clear: both;
+}
+
+
+
+/*#md .md_div_lt,
+#md .md_div_rt {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#md .md_div_lt {
+    width: 55%;
+}
+
+#md .md_div_rt {
+    width: 45%;
+}*/
+
+#md .md_game {
+    width: 92px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+#md .md_game p {
+    margin: 5px 0px 10px 0px;
+}
+
+#md #md_news {
+    padding: 0px 10px 0px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#md #md_news_ul li {
+    margin: 10px 0px;
+}
+
+#md #md_news_ul li span {
+    margin-right: 5px;
+}
+
+#md #md_news_ul .md_news_type_game {
+    color: rgb(204, 0, 102);
+}
+
+#md #md_news_ul .md_news_type_acti {
+    color: rgb(51, 153, 102);
+}
+
+#md #md_news_ul li a:link,
+#md #md_news_ul li a:visited,
+#md #md_news_ul li a:hover {
+    color: rgb(26, 26, 255);
+}
+
+#md #md_money_ul li {
+    margin: 0px 0px 20px 0px;
+    height: 20px;
+}
+
+#md .md_money_jp {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: rgb(128, 64, 0);
+    margin-left: 30px;
+}
+
+#md .md_money_num {
+    width: 120px;
+    height: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    margin-right: 75px;
+    float: right;
+    border: 1px solid rgb(128, 64, 0);
+    text-align: right;
+    padding-right: 3px;
+}
+
+#md .md_rank {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    min-height: 300px;
+    border-radius: 0px;
+    padding: 0px;
+    background-color: transparent;
+    border: 0px;
+}
+
+#md .md_rank:first-child {
+    margin-right: 8px;
+}
+
+#md .md_rank ul {
+    padding: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    border: 0px;
+}
+
+#md .md_rank li {
+    padding-bottom: 0px;
+    background-color: #aaa;
+    border-radius: 0px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#md .md_rank li.ui-state-active {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: #fff;
+}
+
+#md .md_rank li.ui-state-active a {
+    color: black;
+}
+
+#md .md_rank_tabs {
+    padding: 3px;
+    outline-color: transparent;
+}
+
+#md .md_rank_div {
+    background-color: white;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+#md .md_rank_div table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid black;
+}
+
+#md .md_rank_div th {
+    border-bottom: 1px solid black;
+}
+
+#md .md_rank_div th,
+#md .md_rank_div td {
+    padding: 5px 0px;
+}
+
+#md #md_rank_note {
+    margin-top: 10px;
+}
+
+
+/* main #md END */

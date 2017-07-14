@@ -1,0 +1,146 @@
+# ************************************************************
+# Sequel Pro SQL dump
+# Version 4541
+#
+# http://www.sequelpro.com/
+# https://github.com/sequelpro/sequelpro
+#
+# Host: localhost (MySQL 5.6.28)
+# Database: local_gamemoney
+# Generation Time: 2017-01-16 10:48:12 +0000
+# ************************************************************
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+# Dump of table api_setting
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `api_setting`;
+
+CREATE TABLE `api_setting` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `api_key` varchar(200) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `api_setting` WRITE;
+/*!40000 ALTER TABLE `api_setting` DISABLE KEYS */;
+
+INSERT INTO `api_setting` (`id`, `api_key`)
+VALUES
+	(1,'1111');
+
+/*!40000 ALTER TABLE `api_setting` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table jpot
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `jpot`;
+
+CREATE TABLE `jpot` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `accumulation` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `jpot` WRITE;
+/*!40000 ALTER TABLE `jpot` DISABLE KEYS */;
+
+INSERT INTO `jpot` (`id`, `accumulation`)
+VALUES
+	(1,100000000),
+	(2,50000000),
+	(3,20000000),
+	(4,5000000);
+
+/*!40000 ALTER TABLE `jpot` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table jpot_setting
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `jpot_setting`;
+
+CREATE TABLE `jpot_setting` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `jpot_id` tinyint(4) unsigned NOT NULL COMMENT '對應jpot.id',
+  `button_points` int(11) unsigned NOT NULL COMMENT '底分,/100為顯示數字',
+  `charge_points` int(11) unsigned NOT NULL COMMENT '押分,/100為顯示數字',
+  `acc_ratio` int(11) unsigned NOT NULL COMMENT '累積比率,/100為顯示數字',
+  `acc_limit` int(11) unsigned NOT NULL COMMENT '累積上限,/100為顯示數字',
+  `lottery_ratio` int(11) unsigned NOT NULL COMMENT '抽獎機率,/100000為顯示數字',
+  `charge_ratio` int(11) unsigned NOT NULL COMMENT '押分比例,/100為顯示數字',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `jpot_setting` WRITE;
+/*!40000 ALTER TABLE `jpot_setting` DISABLE KEYS */;
+
+INSERT INTO `jpot_setting` (`id`, `jpot_id`, `button_points`, `charge_points`, `acc_ratio`, `acc_limit`, `lottery_ratio`, `charge_ratio`)
+VALUES
+	(1, 1, 10000000, 50000, 40, 100000000, 10, 150000),
+	(2, 2, 5000000, 30000, 30, 50000000, 30, 25000),
+	(3, 3, 2000000, 20000, 20, 20000000, 10, 10000),
+	(4, 4, 500000, 10000, 10, 5000000, 10000, 10000);
+
+
+/*!40000 ALTER TABLE `jpot_setting` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table jpot_win_record
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `jpot_win_record`;
+
+CREATE TABLE `jpot_win_record` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `jpot_id` int(11) unsigned NOT NULL,
+  `game_id` int(11) unsigned NOT NULL,
+  `win_amount` int(11) unsigned NOT NULL,
+  `member_id` int(11) unsigned NOT NULL,
+  `created_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `jpot_error_log` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `jpot_id` int(11) unsigned NOT NULL,
+  `error_msg` text NOT NULL,
+  `game_id` int(11) unsigned NOT NULL,
+  `win_amount` int(11) unsigned NOT NULL,
+  `created_at` datetime NOT NULL,
+  `member_detail` text,
+  `input_detail` text,
+  `member_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `broadcast` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(20) NOT NULL DEFAULT '',
+  `msg` text NOT NULL,
+  `start_date` datetime NOT NULL,
+  `end_date` datetime NOT NULL,
+  `created_at` datetime NOT NULL,
+  `priority` int(11) NOT NULL DEFAULT '999',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

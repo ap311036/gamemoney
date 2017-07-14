@@ -1,0 +1,112 @@
+<tr>
+    <th>名次</th>
+    <th>暱稱</th>
+    <th>遊戲</th>
+    <th>單局倍率</th>
+    <th>機台</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>暱稱1</td>
+    <td>遊戲1</td>
+    <td>54,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>暱稱2</td>
+    <td>遊戲2</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>暱稱3</td>
+    <td>遊戲3</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>暱稱4</td>
+    <td>遊戲4</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>暱稱5</td>
+    <td>遊戲5</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>6</td>
+    <td>暱稱6</td>
+    <td>遊戲6</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>7</td>
+    <td>暱稱7</td>
+    <td>遊戲7</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>8</td>
+    <td>暱稱8</td>
+    <td>遊戲8</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>9</td>
+    <td>暱稱9</td>
+    <td>遊戲9</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>10</td>
+    <td>暱稱10</td>
+    <td>遊戲10</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>11</td>
+    <td>暱稱11</td>
+    <td>遊戲11</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>12</td>
+    <td>暱稱12</td>
+    <td>遊戲12</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>13</td>
+    <td>暱稱13</td>
+    <td>遊戲13</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>14</td>
+    <td>暱稱14</td>
+    <td>遊戲14</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
+<tr>
+    <td>15</td>
+    <td>暱稱15</td>
+    <td>遊戲15</td>
+    <td>4,321</td>
+    <td>321</td>
+</tr>
